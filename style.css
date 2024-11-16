@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
+header {
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    background-color: aquamarine;
+    color: brown;
+}
+
+nav ul { /*selecciona la lista y saca las viñetas*/
+    list-style: none;
+}
+
+nav ul li a {    /*a selecciona los enlaces (etiquetas <a>) dentro de cada <li>*/
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color:black;
+   
+}
