@@ -11,3 +11,6 @@ Asimismo, para probar que el formulario funcione correctamente se agregó en la 
 Agrego archivo styles.css con estilos de background y fuentes para el header y footer. Sin embargo no se aplican y no encuentro el error. El archivo css se encuentra bien referenciado.
 Agrego list-style: none y text-decoration:none pero no saca las viñetas ni el subrayado enlace.
 El problema era el nombre del archivo css. Lo tenia nombrado como styles.css, y la referencia en el html estaba como "style". 
+
+Completo contacto.html con dias y horarios de atención. Inserto iframe, cambio "Formulario de contacto" por "Envianos tu consulta"
+Repito en cada footer los medios de contacto y de pago. Agrego párrafo de derechos reservados.
