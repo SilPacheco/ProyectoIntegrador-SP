@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-/* General Styles */
+
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -10,12 +10,12 @@ body {
     color: #333;
 }
 
-/* Header */
+
 header {
     background: linear-gradient(90deg, #ffb6c1, #add8e6);
     padding: 20px;
     text-align: center;
-    color: white;
+    color: #333;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -32,7 +32,7 @@ header img {
     border-radius: 10px;
 }
 
-/* Navigation */
+/* Menú */
 nav {
     background-color: #ffefd5;
     padding: 10px 0;
@@ -66,7 +66,7 @@ nav ul li a:hover {
     background-color: #ffdab9;
 }
 
-/* Main Section */
+
 main {
     padding: 20px;
 }
@@ -86,10 +86,10 @@ main img {
     height: auto;
 }
 
-/* Footer */
+
 footer {
     background-color: #98fb98;
-    color: white;
+    color: #333;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
@@ -115,7 +115,7 @@ footer ul li {
 }
 
 footer a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
 }
@@ -126,6 +126,6 @@ footer a:hover {
 
 footer i {
     margin-left: 5px;
-    color: white;
+    color: #333;
     vertical-align: middle;
 }
