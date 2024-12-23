@@ -14,3 +14,5 @@ El problema era el nombre del archivo css. Lo tenia nombrado como styles.css, y 
 
 Completo contacto.html con dias y horarios de atención. Inserto iframe, cambio "Formulario de contacto" por "Envianos tu consulta"
 Repito en cada footer los medios de contacto y de pago. Agrego párrafo de derechos reservados.
+
+
