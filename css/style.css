@@ -129,3 +129,19 @@ footer i {
     color: #333;
     vertical-align: middle;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*Para colocar icono antes del texto*/
+li {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/*Para dejar espacio entre icono y texto*/
+li i {
+    margin-right: 8px; 
+}
