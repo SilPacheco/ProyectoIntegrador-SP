@@ -202,3 +202,10 @@ li i {
         width: 100%;
     }
 }
+.review-card h3 {
+    font-size: 1.rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    font-style: italic; 
+}
