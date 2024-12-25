@@ -145,3 +145,60 @@ li {
 li i {
     margin-right: 8px; 
 }
+
+/* Estilo básico para la sección de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Alineación de los elementos a lo largo del eje horizontal */
+    align-items: flex-start; /* Alineación de los elementos a lo largo del eje vertical */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin: 20px;
+}
+
+/* Estilo para las tarjetas */
+.tarjeta {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las imágenes dentro de las tarjetas */
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo para los enlaces dentro de las tarjetas */
+.tarjeta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tarjeta a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividad: A medida que la pantalla se hace más pequeña, las tarjetas se ajustan */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta {
+        width: 100%;
+    }
+}
