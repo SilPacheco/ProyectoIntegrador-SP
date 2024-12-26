@@ -156,7 +156,7 @@ li i {
     margin: 20px;
 }
 
-/* Estilo para las tarjetas */
+/* Estilo tarjetas */
 .tarjeta {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -167,14 +167,14 @@ li i {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo de las imágenes dentro de las tarjetas */
+/* Estilo imágenes dentro de las tarjetas */
 .tarjeta img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Estilo para los enlaces dentro de las tarjetas */
+/* Estilo enlaces dentro de las tarjetas */
 .tarjeta a {
     display: inline-block;
     margin-top: 10px;
@@ -202,10 +202,103 @@ li i {
         width: 100%;
     }
 }
+/* Estilo reseñas */
 .review-card h3 {
     font-size: 1.rem;
     margin-bottom: 10px;
     color: #333;
     text-align: left;
     font-style: italic; 
+}
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilo pagina contacto*/
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+form label {
+    text-align: left; 
+    width: 100%; /* Asegura que ocupen todo el ancho del formulario */
+    
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Mapa (en móvil ocupa todo el ancho) */
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mapa iframe {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    }
+section iframe {
+    display: block; /* Asegura que se trate como un bloque */
+    margin: 0 auto; /* Centra horizontalmente */
+    max-width: 100%; /* Asegura que sea responsive */
+    border: 0;
+    border-radius: 10px; /* Opcional, para darle un diseño más amigable */
+}
+
+/* Adaptación para pantallas más grandes */
+@media (min-width: 768px) {
+    .contacto-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+    }
+
+    .info-contacto, .mapa {
+        flex-direction: column;
+    }
 }
