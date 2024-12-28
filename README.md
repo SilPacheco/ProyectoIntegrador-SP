@@ -5,6 +5,6 @@ Asimismo se utiliza Google fonts para la tipografía y Fontawasome para los íco
 
 Media queries:
 -Formulario de contacto y mapa
--Reseñas (invertir tecnica)
+-Reseñas (faltan tarjetas)
 
 
