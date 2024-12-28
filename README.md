@@ -8,3 +8,6 @@ Media queries:
 -Reseñas (faltan tarjetas)
 
 
+problemas:
+fontawesome
+validacion js form contacto
