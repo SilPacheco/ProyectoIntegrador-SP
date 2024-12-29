@@ -36,3 +36,4 @@ function verificarFormularioContacto() {
         return true; // la validación está ok
     }
 }
+
