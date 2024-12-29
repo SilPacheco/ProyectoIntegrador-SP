@@ -85,7 +85,7 @@ document.addEventListener("click", (event) => {
     if (event.target.classList.contains("agregar")) {
     const id = event.target.closest("article").dataset.id;
     const elemento = productos.find((producto) => producto.id == id);
-      //console.log(elemento);
+      //Obtengo los datos que me interesan del elemento
     const { nombre, precio } = elemento;
     const producto = {
        id: id,
@@ -94,7 +94,7 @@ document.addEventListener("click", (event) => {
     cantidad: 1,
       };
     carrito.push(producto);
-      // Guardo en el localStorage el array carrito en formato JSON
+      // Guardo en el localStorage 
     localStorage.setItem("carrito", JSON.stringify(carrito));
     }
   });
