@@ -36,3 +36,41 @@ function verificarFormularioContacto() {
         return true; // la validación está ok
     }
 }
+// Creo listado de productos
+const productos = [
+    {
+      id: 1,
+      nombre: "Pañales Huggies Natural Care",
+      descripcion: "La línea Supreme Care es la línea premium de Huggies, que nos brinda el máximo confort, la seguridad y la suavidad que queremos para nuestro bebé",
+      imagen: "Huggies supreme care x 96.webp",
+      precio: 38.000,
+      stock: 235,
+    },
+    {
+      id: 2,
+      nombre: "Producto 2",
+      descripcion: "Descripción Producto 2",
+      imagen: "imagen-2.jpg",
+      precio: 20,
+      stock: 10,
+    },
+    {
+      id: 3,
+      nombre: "Producto 3",
+      descripcion: "Descripción Producto 3",
+      imagen: "imagen-3.jpg",
+      precio: 30,
+      stock: 80,
+    },
+    {
+      id: 4,
+      nombre: "Producto 4",
+      descripcion: "Descripción Producto 4",
+      imagen: "imagen-4.jpg",
+      precio: 50,
+      stock: 10,
+    },
+  ];
+  // Para obtener lo que está en el carrito
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  
