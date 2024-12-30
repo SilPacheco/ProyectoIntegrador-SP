@@ -302,3 +302,102 @@ section iframe {
         flex-direction: column;
     }
 }
+/* Style para productos */
+/* Contenedor principal del listado de productos */
+.listado-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Alinea las tarjetas horizontalmente */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    margin: 20px auto;
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+}
+
+/* Diseño individual de las tarjetas */
+.listado-productos article {
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 15px;
+    text-align: center;
+    width: 220px; /* Ancho fijo de las tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones */
+}
+
+/* Efecto hover en las tarjetas */
+.listado-productos article:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Imágenes dentro de las tarjetas */
+.listado-productos article img {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 10px;
+}
+
+/* Estilo del título del producto */
+.listado-productos article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo del texto descriptivo */
+.listado-productos article p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Precio del producto */
+.listado-productos article p strong {
+    font-size: 1rem;
+    color: #007bff; /* Color azul para destacar el precio */
+}
+
+/* Botón "Agregar" */
+.listado-productos article button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.listado-productos article button:hover {
+    background-color: #0056b3;
+}
+/* justes para pantallas más grandes */
+@media (min-width: 480px) {
+    .tarjeta {
+        width: 48%; /* Dos tarjetas por fila en pantallas medianas */
+    }
+}
+
+@media (min-width: 768px) {
+    .tarjeta {
+        width: 31%; /* Tres tarjetas por fila en pantallas grandes */
+    }
+}
+
+/* Contenedor para los totales */
+.totales {
+    display: flex;              
+    text-align: right;  
+    margin-top: 20px;           
+    padding-right: 30px;        
+    font-weight: bold;
+  }
+  
+  /* Estilos para cada párrafo de los totales */
+  .totales p {
+    margin: 0;              /* Agrega un pequeño espacio entre los totales */
+    font-size: 1.2em;           /* Tamaño de fuente más grande */
+  }
