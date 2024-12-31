@@ -387,17 +387,56 @@ section iframe {
     }
 }
 
-/* Contenedor para los totales */
-.totales {
-    display: flex;              
-    text-align: right;  
-    margin-top: 20px;           
-    padding-right: 30px;        
-    font-weight: bold;
-  }
-  
-  /* Estilos para cada párrafo de los totales */
-  .totales p {
-    margin: 0;              /* Agrega un pequeño espacio entre los totales */
-    font-size: 1.2em;           /* Tamaño de fuente más grande */
-  }
+/* Estilo de la review container */
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo de las tarjetas */
+.review-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Efecto hover */
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del texto de la calificación */
+.rating {
+    font-size: 1rem;
+    color: #ffa500;
+}
+
+/* Estilo del nombre del cliente */
+.reviewer {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

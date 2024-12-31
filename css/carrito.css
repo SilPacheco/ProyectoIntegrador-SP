@@ -1,0 +1,28 @@
+.btn-ir-productos {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .btn-ir-productos:hover {
+    background-color: #218838;
+  }
+
+  /* Contenedor para los totales 
+.totales {
+    display: flex;              
+    text-align: right;  
+    margin-top: 20px;           
+    padding-right: 30px;        
+    font-weight: bold;
+  }
+  
+  Estilos para cada párrafo de los totales 
+  .totales p {
+    margin: 0;              Agrega un pequeño espacio entre los totales */
+     /*font-size: 1.2em;           Tamaño de fuente más grande 
+  }*/

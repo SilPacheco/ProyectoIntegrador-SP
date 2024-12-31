@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pañalitos</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carrito.css">
     <link rel="icon" href="./img/pañalazul.ico">
 </head>
 <body>
@@ -36,20 +37,17 @@
       <section class="carrito">
         <h2>Carrito</h2>
         <table>
-          <thead>
+          <thead class="tabla-encabezados">
             <tr>
               <th>Nombre</th>
               <th>Cantidad</th>
-              <th>Precio</th>
+              <th>Precio unitario</th>
+              <th>Subtotal</th>
               <th>Acciones</th>
             </tr>
           </thead>
           <tbody class="items">
-            <tr data-id="">
-              <td>Nombre</td>
-              <td>Cantidad</td>
-              <td>Precio</td>
-            </tr>
+            <!-- Aquí se generarán los productos dinámicamente -->
           </tbody>
         </table>
       </section>

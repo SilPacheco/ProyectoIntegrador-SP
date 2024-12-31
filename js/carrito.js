@@ -5,48 +5,59 @@ const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const items = document.querySelector(".items");
 items.innerHTML = "";
 
-// Inicializar las variables para el total de productos y el total de la compra
-let totalProductos = 0;
-let totalCompra = 0;
-
-// Recorrer cada producto del carrito
-carrito.forEach((item) => {
-  // Actualizar el total de productos y total de la compra
-  totalProductos += item.cantidad;  // Sumar la cantidad de cada producto
-  totalCompra += item.precio * item.cantidad;  // Sumar el precio total de cada producto
-
-  // Crear el HTML para cada producto en el carrito
-  const html = `
-    <tr data-id="${item.id}">
-        <td>${item.nombre}</td>
-        <td>
-            <button class="editar-cantidad" data-id="${item.id}">-</button>
-            ${item.cantidad}
-            <button class="editar-cantidad" data-id="${item.id}">+</button>
-        </td>
-        <td>$ ${item.precio}</td>
-        <td><button class="eliminar-producto" data-id="${item.id}">Eliminar</button></td>
+// Comprobar si el carrito está vacío
+if (carrito.length === 0) {
+  // Mostrar mensaje de carrito vacío
+  items.innerHTML = `
+    <tr>
+      <td colspan="4" style="text-align: center;">
+        <p>El carrito de compras está vacío.</p>
+        <a href="productos.html" class="btn-ir-productos">Ver productos</a>
+      </td>
     </tr>
   `;
-  items.innerHTML += html;
-});
+} else {
+  // Inicializar las variables para el total de productos y el total de la compra
+  let totalProductos = 0;
+  let totalCompra = 0;
 
-// Mostrar el total de productos y el total de la compra
-const totalElement = document.createElement("div");
+  // Recorrer cada producto del carrito
+  carrito.forEach((item) => {
+    // Actualizar el total de productos y total de la compra
+    totalProductos += item.cantidad; // Sumar la cantidad de cada producto
+    totalCompra += item.precio * item.cantidad; // Sumar el precio total de cada producto
 
-totalElement.innerHTML = `
-  <p>Total de productos: ${totalProductos}
-  <p>Total de la compra: $ ${totalCompra}</p>
-`;
+    // Crear el HTML para cada producto en el carrito
+    const html = `
+      <tr data-id="${item.id}">
+          <td>${item.nombre}</td>
+          <td>
+              <button class="editar-cantidad" data-id="${item.id}">-</button>
+              ${item.cantidad}
+              <button class="editar-cantidad" data-id="${item.id}">+</button>
+          </td>
+          <td>$ ${item.precio}</td>
+          <td><button class="eliminar-producto" data-id="${item.id}">Eliminar</button></td>
+      </tr>
+    `;
+    items.innerHTML += html;
+  });
 
-document.querySelector("main").appendChild(totalElement);
+  // Mostrar el total de productos y el total de la compra
+  const totalElement = document.createElement("div");
+  totalElement.innerHTML = `
+    <p>Total de productos: ${totalProductos}</p>
+    <p>Total de la compra: $ ${totalCompra}</p>
+  `;
+  document.querySelector("main").appendChild(totalElement);
+}
 
 // Funcionalidad para editar la cantidad de productos
 document.addEventListener("click", (event) => {
   if (event.target.classList.contains("editar-cantidad")) {
     const id = event.target.dataset.id;
     const producto = carrito.find((item) => item.id == id);
-    
+
     if (event.target.textContent === "+") {
       producto.cantidad += 1;
     } else if (event.target.textContent === "-" && producto.cantidad > 1) {
@@ -68,7 +79,7 @@ document.addEventListener("click", (event) => {
     const index = carrito.findIndex((item) => item.id == id);
 
     if (index !== -1) {
-      carrito.splice(index, 1);  // Eliminar el producto del carrito
+      carrito.splice(index, 1); // Eliminar el producto del carrito
     }
 
     // Guardar el carrito actualizado en localStorage
