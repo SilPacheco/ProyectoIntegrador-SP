@@ -1,6 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+/* Estilo General */
 
 body {
     font-family: 'Nunito', sans-serif;
@@ -32,7 +33,7 @@ header img {
     border-radius: 10px;
 }
 
-/* Menú */
+/* Barra de menú de la tienda*/
 nav {
     background-color: #ffefd5;
     padding: 10px 0;
@@ -141,17 +142,17 @@ li {
     align-items: center;
     margin-bottom: 10px;
 }
-/*Para dejar espacio entre icono y texto*/
+/*Espacio entre icono y texto*/
 li i {
     margin-right: 8px; 
 }
 
-/* Estilo básico para la sección de productos */
+/* Estilo para la sección de productos */
 .productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Alineación de los elementos a lo largo del eje horizontal */
-    align-items: flex-start; /* Alineación de los elementos a lo largo del eje vertical */
+    justify-content: space-around; 
+    align-items: flex-start; 
     gap: 20px; /* Espacio entre las tarjetas */
     margin: 20px;
 }
@@ -190,26 +191,33 @@ li i {
     background-color: #0056b3;
 }
 
-/* Responsividad: A medida que la pantalla se hace más pequeña, las tarjetas se ajustan */
-@media (max-width: 768px) {
+/* Estilo base para pantallas pequeñas. Ocupa 100% ancho */
+.tarjeta {
+    width: 100%; 
+}
+
+/* A medida que la pantalla crece, ajustamos el diseño */
+@media (min-width: 481px) {
     .tarjeta {
-        width: 45%;
+        width: 45%; 
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 769px) {
     .tarjeta {
-        width: 100%;
+        width: 30%; 
     }
 }
+
 /* Estilo reseñas */
 .review-card h3 {
-    font-size: 1.rem;
+    font-size: 1rem; /* Corregido: Eliminé el punto extra (debe ser "1rem") */
     margin-bottom: 10px;
     color: #333;
     text-align: left;
-    font-style: italic; 
+    font-style: italic;
 }
+
 .contacto-container {
     display: flex;
     flex-direction: column;
@@ -234,7 +242,7 @@ form {
 }
 form label {
     text-align: left; 
-    width: 100%; /* Asegura que ocupen todo el ancho del formulario */
+    width: 100%; /* Ocupa todo el ancho del formulario */
     
 }
 
