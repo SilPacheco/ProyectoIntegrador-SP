@@ -3,10 +3,14 @@ const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 // Seleccionar el contenedor donde se mostrarán los productos
 const items = document.querySelector(".items");
+const table = document.querySelector("table"); // Seleccionar la tabla completa
 items.innerHTML = "";
 
 // Comprobar si el carrito está vacío
 if (carrito.length === 0) {
+  // Ocultar los encabezados de la tabla
+  table.querySelector("thead").style.display = "none";
+
   // Mostrar mensaje de carrito vacío
   items.innerHTML = `
     <tr>
@@ -17,6 +21,9 @@ if (carrito.length === 0) {
     </tr>
   `;
 } else {
+  // Mostrar los encabezados de la tabla
+  table.querySelector("thead").style.display = "";
+
   // Inicializar las variables para el total de productos y el total de la compra
   let totalProductos = 0;
   let totalCompra = 0;
