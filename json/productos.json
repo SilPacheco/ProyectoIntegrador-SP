@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "nombre": "Pañales Huggies Natural Care",
+      "descripcion": "Presentación: 60 unidades",
+      "imagen": "../img/huggies-natural-care.jpg",
+      "precio": 38000,
+      "stock": 235
+    },
+    {
+      "id": 2,
+      "nombre": "Pampers Baby Dry",
+      "descripcion": "Presentación: 54 unidades",
+      "imagen": "../img/pampers baby dry.jpg",
+      "precio": 21000,
+      "stock": 172
+    },
+    {
+      "id": 3,
+      "nombre": "BabySec Premium",
+      "descripcion": "Presentación: 44 unidades",
+      "imagen": "../img/Babysec premium.jpg",
+      "precio": 10500,
+      "stock": 85
+    },
+    {
+      "id": 4,
+      "nombre": "Pañales Estrella Baby",
+      "descripcion": "Presentación: 52 unidades",
+      "imagen": "../img/estrella baby.jpg",
+      "precio": 8500,
+      "stock": 15
+    },
+    {
+      "id": 5,
+      "nombre": "Algodón Estrella Super",
+      "descripcion": "Presentación: 400 grs.",
+      "imagen": "../img/algodon estrella400.jpg",
+      "precio": 8500,
+      "stock": 15
+    },
+    {
+      "id": 6,
+      "nombre": "Algodón Estrella Precortado",
+      "descripcion": "Presentación: 50 paños 9x11cm",
+      "imagen": "../img/algodon precortado.jpg",
+      "precio": 8500,
+      "stock": 15
+    },
+    {
+      "id": 7,
+      "nombre": "Pañales Huggies para el agua",
+      "descripcion": "Presentación: 10 unidades",
+      "imagen": "../img/huggies agua.jpg",
+      "precio": 12000,
+      "stock": 58
+    }
+  ]
