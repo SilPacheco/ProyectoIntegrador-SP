@@ -7,6 +7,6 @@ Media queries:
 -Formulario de contacto y mapa.
 -Reseñas 
 
-Validación formulario de contacto: campo "nombre" con js; resto directo en html.
+Validación js en formulario de contacto.
 
 Repositorio: https://silpacheco.github.io/ProyectoIntegrador-SP/
